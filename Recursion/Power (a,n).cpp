@@ -30,12 +30,14 @@ int powerr(int a,int n)
 {
 	if(n==0)
 	return 1;
+	int smallAns=powerr(a,n/2);
+	smallAns*=smallAns;
 	if(n%2==0)
 	{
-		return powerr(a,n/2)*powerr(a,n/2);
+		return smallAns;
 	}
 	else
-	return a*powerr(a,n/2)*powerr(a,n/2);
+	return a*smallAns;
 }
 int main()
 {
