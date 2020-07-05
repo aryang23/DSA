@@ -1,0 +1,48 @@
+//By Aryan Grover(@aryang23)
+//Heaps
+//Heaps as Array
+//Parent, i ka Parent i/2 pe hoga
+//Children i ke children 2*i and 2*i+1 honge
+
+
+//Every Child has a property less than the Parent 
+
+//In Heap 
+//Insertion: -//O(logN)
+//Deletion: - O(logN)
+//Get : - O(1)
+
+
+//Binary Tree
+//Complete Binary TREE
+//Priority of Child is lesser than that of Parent
+
+//Perfect Binary Tree in which all levels are completed
+
+//Complete Binary Tree means 
+//Every Level except Last is filled, All are fully filled and last is partially filled
+//Elements are filled in left to right
+
+//Why not getting a Ternary tree or any other else
+//O(log3N)
+//In this Number of Comparisons will gonna increase
+
+//That's why we are restricting to Binary Trees
+//Types of Binary Heaps: -
+//Min Heap and Max Heap
+
+//Min Heap means Value of Parent<Value of Children
+//Max Heap means Value of Parent>Value of Children
+
+
+
+//We can repersent heap in an array or in vectors
+//Priority of Parent should be greater than the child
+
+//Indexing from 0
+//Parent at index=i so Left Child at 2*i+1 and right Child at 2*i+2
+//We are at jth index, Parent =(j-1)/2 and then floor
+
+//If Indexing from 1
+//Parent is 1 So Left Child is 2*i and Right Child is 2*i+1
+//And If Child at j Parent is j/2 and then take floor
