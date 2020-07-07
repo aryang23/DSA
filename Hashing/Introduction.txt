@@ -1,0 +1,40 @@
+//Hashing
+//Key is mapped in the Array at the index that is found using Hash function
+//No Ordering
+
+//3 Operations: -
+//Insertion, Deletion, Search in O(c)
+//We also need to avoid the collision
+
+//Hash Function
+//That converts a key into an integer
+
+//Good H.F.: - 1. Reduce chance of Collisions that is Distribute Kes uniformly over table
+//2. Should be Fast to compute
+//Distribution More Imp
+
+//M-1
+//Index=key%TableSize
+//So like if TS=10 and keys are 10,20,30,40 so they will land up at same space
+//Table Size is not recommended to be 10 or like that 
+//So TS is recommended to be a Prime Number
+
+//if key is string
+//Treat the strings as base 27
+//a-1,b-2,c-3............z-26
+//abc=(a+27b+27^2c)%TS
+//Assumes first 3 chars are randomly distributed
+
+//M-3
+//batman: - n+a*37+m*37^2+t*37^3+.....
+
+
+
+//Collision Handling Schemes
+//3 Methods
+//1. Open Hashing - Seperate Chaining
+//2. Closed Hashing
+//3. Double Hashing
+
+//Open Hashing
+//Linked Lists
